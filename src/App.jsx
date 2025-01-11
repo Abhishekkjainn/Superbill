@@ -1,22 +1,15 @@
 import { useState } from 'react';
 import './App.css';
 import Header from './components/header';
+import Page1 from './pages/page1';
+import Page2 from './pages/page2';
 
 function App() {
   return (
     <>
       <Header />
-      <div className="page1">
-        <div className="page1tag"></div>
-        <div className="headingpage1">
-          Simplify Your Billing, <br />
-          Optimize Your Inventory.
-        </div>
-        <div className="descpage1">
-          Designed for modern businesses, we simplify your billing and inventory
-          processes for better productivity and smarter decisions.
-        </div>
-      </div>
+      <Page1 />
+      <Page2 />
     </>
   );
 }

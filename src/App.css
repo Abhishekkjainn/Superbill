@@ -111,7 +111,7 @@ body {
 /*Page 1*/
 .page1{
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,11 +121,46 @@ body {
   font-size: 56px;
   font-weight: 600;
   text-align: center;
-  
+  line-height: 60px;
+}
+.blue{
+  color: rgb(10, 66, 206);
+}
+.descpage1{
+  margin-top: 30px;
+  text-align: center;
+  width: 45%;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(62, 62, 62);
+}
+.page1buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.secondarybutton{
+  margin-left: 20px;
+  color: rgb(10, 66, 206);
+  font-size: 12px;
+  font-weight: 600;
 }
   
-  
-  
+
+/*Page2*/
+.page2{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboardimg{
+  width: 70%;
+  border: 4px solid rgb(80, 80, 80);
+  border-radius: 20px;
+}
   
   
   
@@ -182,5 +217,61 @@ body {
     cursor: pointer;
     margin-bottom: 16px;
   }
+
+  /*Page 1*/
+.page1{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.headingpage1{
+  font-size: 36px;
+  width: 90%;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+}
+.blue{
+  color: rgb(10, 66, 206);
+}
+.descpage1{
+  margin-top: 24px;
+  text-align: center;
+  width: 80%;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(62, 62, 62);
+}
+.page1buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.secondarybutton{
+  margin-left: 20px;
+  color: rgb(10, 66, 206);
+  font-size: 12px;
+  font-weight: 600;
+}
+  
+
+/*Page2*/
+.page2{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboardimg{
+  width: 90%;
+  border: 4px solid rgb(80, 80, 80);
+  border-radius: 20px;
+}
+
 }
   
