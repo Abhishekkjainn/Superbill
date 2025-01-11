@@ -3,12 +3,11 @@ export default function Page1() {
     <div className="page1">
       <div className="page1tag"></div>
       <div className="headingpage1">
-        Simplify Your <span className="blue"> Billing,</span> <br />
-        Optimize Your Inventory.
+        Billing made <span className="blue">Smart </span>
+        and Simple.
       </div>
       <div className="descpage1">
-        Designed for modern businesses, we simplify your billing and inventory
-        processes for better productivity and smarter decisions.
+        Empowering Businesses with Hassle free Billing Solutions.
       </div>
       <div className="page1buttons">
         <div className="primarybutton">
