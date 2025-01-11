@@ -1,42 +1,186 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans";
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 40px;
+  background-color: aliceblue;
+}
+
+
+.header {
+  width: 100%;
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0.447);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgb(246, 246, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.company {
+  width: 25%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.companylogoimg {
+  width: 20px;
+  margin-left: 20px;
+}
+.companyname {
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+  font-size: 12px;
+  margin: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(89, 89, 89);
+}
+.link:hover {
+  transition: 0.3s;
+  color: black;
+}
+.buttons {
+  width: 25%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 12px;
+}
+.primarybutton {
+  padding: 8px 16px;
+  background-color: rgb(10, 66, 206);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.primaryarrowicon {
+  width: 10px;
+  margin-left: 8px;
+}
+.buttontag {
+  font-weight: 500;
+  color: white;
+  font-size: 12px;
+}
+.menuicon {
+  display: none;
+}
+.menuiconimage {
+  width: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Overlay for Menu */
+.menudivoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.menudivhidden{
+  display: none;
+}
+  
+
+/*Page 1*/
+.page1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.headingpage1{
+  font-size: 56px;
+  font-weight: 600;
   text-align: center;
+  
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+@media screen and (max-width: 1000px) {
+  .company {
+    width: 70%;
   }
-  to {
-    transform: rotate(360deg);
+  .links {
+    display: none;
+  }
+  .buttons {
+    display: none;
+  }
+  .menuicon {
+    display: flex;
+    width: 30%;
+    justify-content: end;
+    align-items: center;
+  }
+  .menudiv {
+      transition: 0.3s;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    background-color: white;
+    z-index: 101;
+    padding: 16px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .menudivhidden {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  .menucontent .link {
+    font-size: 14px;
+    margin: 16px 0;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+  }
+  .closebutton {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 16px;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
